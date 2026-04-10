@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>有行世家 · YouXing Heritage</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #18140f;
+    --ink-soft: #2e2820;
+    --gold: #b8963e;
+    --gold-light: #d4af6a;
+    --cream: #f7f2ea;
+    --cream-dark: #ede5d4;
+    --sage: #7a8f7c;
+    --rust: #8b3a2a;
+    --slate: #5a6472;
+    --white: #fdfaf5;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { font-size: 16px; scroll-behavior: smooth; }
+
+  body {
+    background: var(--white);
+    color: var(--ink);
+    font-family: 'Noto Serif SC', serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  /* ─── NAV ─── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 5vw;
+    height: 56px;
+    background: rgba(253,250,245,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(184,150,62,0.15);
+  }
+  .nav-brand {
+    font-size: 15px; font-weight: 600; letter-spacing: 0.1em;
+    color: var(--ink); text-decoration: none;
+  }
+  .nav-brand span { color: var(--gold); }
+  .nav-links { display: flex; gap: 28px; }
+  .nav-links a {
+    font-size: 12px; letter-spacing: 0.08em; color: var(--slate);
+    text-decoration: none; transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--gold); }
+  @media (max-width: 600px) { .nav-links { display: none; } }
+
+  /* ─── HERO ─── */
+  .hero {
+    min-height: 100svh;
+    display: grid; place-items: center;
+    text-align: center;
+    padding: 80px 6vw 60px;
+    background: var(--white);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 60% 40% at 15% 80%, rgba(184,150,62,0.06) 0%, transparent 70%),
+      radial-gradient(ellipse 50% 30% at 85% 20%, rgba(122,143,124,0.05) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-eyebrow {
+    font-size: 11px; letter-spacing: 0.22em; color: var(--gold);
+    text-transform: uppercase; margin-bottom: 20px;
+    opacity: 0; animation: fadeUp 0.8s 0.2s forwards;
+  }
+  .hero-kanji {
+    font-size: clamp(56px, 14vw, 108px);
+    font-weight: 700; line-height: 1;
+    color: var(--ink); letter-spacing: 0.05em;
+    opacity: 0; animation: fadeUp 0.8s 0.4s forwards;
+  }
+  .hero-kanji span { color: var(--gold); }
+  .hero-en {
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+    font-size: clamp(14px, 3vw, 20px);
+    color: var(--slate); letter-spacing: 0.04em;
+    margin-top: 10px;
+    opacity: 0; animation: fadeUp 0.8s 0.55s forwards;
+  }
+  .hero-line {
+    width: 48px; height: 1px; background: var(--gold-light);
+    margin: 28px auto;
+    opacity: 0; animation: fadeIn 0.8s 0.7s forwards;
+  }
+  .hero-sub {
+    font-size: clamp(13px, 2.2vw, 15px); line-height: 1.9;
+    color: var(--slate); max-width: 480px; margin: 0 auto;
+    opacity: 0; animation: fadeUp 0.8s 0.8s forwards;
+  }
+  .hero-scroll {
+    position: absolute; bottom: 28px; left: 50%; transform: translateX(-50%);
+    font-size: 11px; letter-spacing: 0.15em; color: var(--gold-light);
+    display: flex; flex-direction: column; align-items: center; gap: 8px;
+    opacity: 0; animation: fadeIn 1.2s 1.4s forwards;
+  }
+  .scroll-line {
+    width: 1px; height: 36px; background: var(--gold-light);
+    animation: scrollPulse 2s 1.6s infinite;
+  }
+
+  /* ─── SECTION COMMON ─── */
+  section { padding: 80px 6vw; }
+  .section-eyebrow {
+    font-size: 11px; letter-spacing: 0.2em; color: var(--gold);
+    text-transform: uppercase; margin-bottom: 12px;
+  }
+  .section-title {
+    font-size: clamp(24px, 5vw, 36px); font-weight: 600;
+    line-height: 1.3; color: var(--ink); max-width: 600px;
+  }
+  .section-body {
+    font-size: 14px; line-height: 1.95; color: var(--slate);
+    max-width: 520px; margin-top: 14px;
+  }
+
+  /* ─── ABOUT ─── */
+  .about {
+    background: var(--cream);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+  @media (max-width: 700px) {
+    .about { grid-template-columns: 1fr; gap: 32px; }
+  }
+  .about-visual {
+    display: flex; flex-direction: column; gap: 3px;
+  }
+  .year-bar {
+    display: flex; align-items: center; gap: 14px;
+    padding: 12px 0; border-bottom: 1px solid rgba(184,150,62,0.15);
+  }
+  .year-bar:last-child { border-bottom: none; }
+  .year-num {
+    font-family: 'Lora', serif; font-style: italic;
+    font-size: 13px; color: var(--gold); min-width: 38px;
+  }
+  .year-text { font-size: 12px; color: var(--ink-soft); line-height: 1.5; }
+
+  /* ─── SITES GRID ─── */
+  .sites { background: var(--white); }
+  .sites-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px; margin-top: 48px;
+  }
+  @media (max-width: 560px) {
+    .sites-grid { grid-template-columns: 1fr; }
+  }
+  .site-card {
+    border: 1px solid var(--cream-dark);
+    border-radius: 4px;
+    padding: 28px 24px 24px;
+    text-decoration: none;
+    display: block;
+    position: relative; overflow: hidden;
+    transition: border-color 0.25s, transform 0.25s;
+    background: var(--white);
+  }
+  .site-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    background: var(--card-accent, var(--gold));
+    transform: scaleX(0); transform-origin: left;
+    transition: transform 0.3s;
+  }
+  .site-card:hover { border-color: var(--card-accent, var(--gold)); transform: translateY(-3px); }
+  .site-card:hover::before { transform: scaleX(1); }
+  .site-card.c1 { --card-accent: #1D9E75; }
+  .site-card.c2 { --card-accent: #534AB7; }
+  .site-card.c3 { --card-accent: #b8963e; }
+  .site-card.c4 { --card-accent: #8b3a2a; }
+  .site-num {
+    font-family: 'Lora', serif; font-style: italic;
+    font-size: 11px; letter-spacing: 0.1em; color: var(--card-accent, var(--gold));
+    margin-bottom: 14px; display: block;
+  }
+  .site-name {
+    font-size: 18px; font-weight: 600; color: var(--ink);
+    line-height: 1.3; margin-bottom: 6px;
+  }
+  .site-sub {
+    font-size: 11px; color: var(--slate); letter-spacing: 0.05em;
+    font-family: 'Lora', serif; font-style: italic;
+    margin-bottom: 14px;
+  }
+  .site-desc {
+    font-size: 12px; color: var(--slate); line-height: 1.75; margin-bottom: 18px;
+  }
+  .site-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+  .site-tag {
+    font-size: 10px; letter-spacing: 0.07em;
+    padding: 3px 9px; border: 1px solid currentColor;
+    border-radius: 2px; color: var(--card-accent, var(--gold));
+    opacity: 0.8;
+  }
+  .site-arrow {
+    position: absolute; bottom: 22px; right: 22px;
+    font-size: 16px; color: var(--card-accent, var(--gold));
+    opacity: 0; transform: translateX(-4px);
+    transition: opacity 0.2s, transform 0.2s;
+  }
+  .site-card:hover .site-arrow { opacity: 1; transform: translateX(0); }
+
+  /* ─── MISSION ─── */
+  .mission {
+    background: var(--ink);
+    text-align: center;
+    padding: 80px 6vw;
+  }
+  .mission .section-eyebrow { color: var(--gold-light); }
+  .mission blockquote {
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+    font-size: clamp(22px, 5vw, 38px);
+    color: var(--cream);
+    line-height: 1.5; max-width: 680px; margin: 0 auto;
+    letter-spacing: 0.01em;
+  }
+  .mission blockquote em { color: var(--gold-light); font-style: normal; }
+  .mission-line {
+    width: 1px; height: 48px; background: var(--gold);
+    margin: 32px auto; opacity: 0.5;
+  }
+  .mission p {
+    font-size: 13px; color: rgba(237,229,212,0.6);
+    letter-spacing: 0.08em; text-transform: uppercase;
+  }
+
+  /* ─── NFT TEASER ─── */
+  .nft-teaser {
+    background: var(--cream);
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 48px; align-items: center;
+  }
+  @media (max-width: 700px) {
+    .nft-teaser { grid-template-columns: 1fr; gap: 28px; }
+  }
+  .nft-artwork {
+    aspect-ratio: 4/3;
+    background: var(--cream-dark);
+    border-radius: 2px;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 8px; position: relative; overflow: hidden;
+    border: 1px solid rgba(184,150,62,0.3);
+  }
+  .nft-artwork::after {
+    content: '李有行\A1947';
+    white-space: pre;
+    font-size: 11px; letter-spacing: 0.12em; color: rgba(184,150,62,0.5);
+    text-align: center; line-height: 1.8;
+    position: absolute; bottom: 14px; right: 16px;
+    font-family: 'Lora', serif; font-style: italic;
+  }
+  .paint-strokes {
+    display: flex; gap: 3px; align-items: flex-end; height: 80px;
+  }
+  .stroke {
+    width: 18px; border-radius: 9px 9px 3px 3px;
+    transition: height 0.4s ease;
+  }
+  .nft-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--ink); color: var(--gold-light);
+    font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
+    padding: 6px 14px; border-radius: 2px; margin-top: 16px;
+  }
+  .nft-badge::before { content: ''; width: 6px; height: 6px; background: var(--gold); border-radius: 50%; }
+
+  /* ─── FOOTER ─── */
+  footer {
+    background: var(--ink-soft); padding: 40px 6vw;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 20px;
+  }
+  .footer-brand { font-size: 14px; font-weight: 600; color: var(--cream); letter-spacing: 0.1em; }
+  .footer-brand span { color: var(--gold-light); }
+  .footer-links { display: flex; gap: 20px; }
+  .footer-links a { font-size: 11px; color: rgba(237,229,212,0.4); text-decoration: none; letter-spacing: 0.06em; transition: color 0.2s; }
+  .footer-links a:hover { color: var(--gold-light); }
+  .footer-copy { font-size: 10px; color: rgba(237,229,212,0.25); letter-spacing: 0.06em; width: 100%; }
+
+  /* ─── CTA BUTTON ─── */
+  .btn {
+    display: inline-block; margin-top: 28px;
+    padding: 12px 28px;
+    font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--gold); border: 1px solid var(--gold);
+    text-decoration: none; transition: background 0.2s, color 0.2s;
+    border-radius: 2px;
+  }
+  .btn:hover { background: var(--gold); color: var(--white); }
+  .btn-inv {
+    color: var(--cream); border-color: rgba(237,229,212,0.4);
+  }
+  .btn-inv:hover { background: rgba(237,229,212,0.1); color: var(--cream); }
+
+  /* ─── ANIMATIONS ─── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; } to { opacity: 1; }
+  }
+  @keyframes scrollPulse {
+    0%, 100% { transform: scaleY(1); opacity: 0.6; }
+    50% { transform: scaleY(0.5); opacity: 1; }
+  }
+
+  /* ─── SCROLL REVEAL ─── */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s, transform 0.7s; }
+  .reveal.visible { opacity: 1; transform: none; }
+
+  /* ─── DIVIDER ─── */
+  .ornament {
+    text-align: center; padding: 0; color: var(--gold-light);
+    font-size: 14px; letter-spacing: 0.3em; opacity: 0.5;
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-brand" href="#">有行<span>世家</span></a>
+  <div class="nav-links">
+    <a href="#sites">四代故事</a>
+    <a href="#about">关于</a>
+    <a href="#mission">使命</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <p class="hero-eyebrow">YouXing Heritage · 四代数字传承</p>
+    <h1 class="hero-kanji">有<span>行</span>世家</h1>
+    <p class="hero-en">A Century of Stories, Preserved Forever</p>
+    <div class="hero-line"></div>
+    <p class="hero-sub">跨越百年，四代人的生命印记。<br>从东方色彩大师到AI时代的出海妈妈，<br>每一个故事，都值得永久留存。</p>
+    <a class="btn" href="#sites">探索四代故事</a>
+  </div>
+  <div class="hero-scroll">
+    <span>向下滚动</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ABOUT STRIP -->
+<section class="about" id="about">
+  <div class="reveal">
+    <p class="section-eyebrow">四代人 · 一条线</p>
+    <h2 class="section-title">从1905年的里昂美术学院，到2024年的AI数字资产</h2>
+    <p class="section-body">这是一个普通中国家庭跨越一个世纪的真实档案。艺术、教育、工程、历史、出海、投资——每一代人以自己的方式，在时代的缝隙里刻下印记。</p>
+    <a class="btn" href="#mission">了解我们的使命</a>
+  </div>
+  <div class="about-visual reveal">
+    <div class="year-bar">
+      <span class="year-num">1905</span>
+      <span class="year-text">李有行生于四川梓潼 · 后留学法国里昂美术学院 · 东方色彩大师</span>
+    </div>
+    <div class="year-bar">
+      <span class="year-num">1933</span>
+      <span class="year-text">李守中生于上海 · 工程师、学者 · 美国宾州州立大学访问学者</span>
+    </div>
+    <div class="year-bar">
+      <span class="year-num">196x</span>
+      <span class="year-text">李氏先生出生 · 旅居德国十八年 · 六十至八十年代亲历者</span>
+    </div>
+    <div class="year-bar">
+      <span class="year-num">2004</span>
+      <span class="year-text">李家媳妇大学毕业 · 外贸经理 · 三孩妈妈 · AI时代出海人</span>
+    </div>
+    <div class="year-bar">
+      <span class="year-num">2011+</span>
+      <span class="year-text">三个孩子出生 · 成长记录 · 家族数字资产的下一代</span>
+    </div>
+  </div>
+</section>
+
+<!-- SITES GRID -->
+<section class="sites" id="sites">
+  <div class="reveal">
+    <p class="section-eyebrow">四个子站 · 四种声音</p>
+    <h2 class="section-title">选择你想进入的故事世界</h2>
+  </div>
+  <div class="sites-grid">
+
+    <a class="site-card c1 reveal" href="https://blog.youxingshijia.com" target="_blank">
+      <span class="site-num">站点 01</span>
+      <h3 class="site-name">一个三孩妈的<br>出海人生</h3>
+      <p class="site-sub">blog.youxing.com</p>
+      <p class="site-desc">04年财务专业毕业，从零外贸到百万出口，从德国外教到AI工具，从代购奶粉到加密投资——一个真实的跨界妈妈的第一手记录。</p>
+      <div class="site-tags">
+        <span class="site-tag">出海实录</span>
+        <span class="site-tag">AI工具</span>
+        <span class="site-tag">加密投资</span>
+        <span class="site-tag">亲子游泳</span>
+      </div>
+      <span class="site-arrow">→</span>
+    </a>
+
+    <a class="site-card c2 reveal" href="https://story.youxingshijia.com" target="_blank">
+      <span class="site-num">站点 02</span>
+      <h3 class="site-name">旅德十八年<br>口述历史</h3>
+      <p class="site-sub">story.youxingshijia.com</p>
+      <p class="site-desc">旅居德国十八年的亲历者，以视频和文字的方式，讲述中国六十至八十年代那些不能在国内公开讲述的真实故事。</p>
+      <div class="site-tags">
+        <span class="site-tag">六七八十年代</span>
+        <span class="site-tag">海外视角</span>
+        <span class="site-tag">口述历史</span>
+      </div>
+      <span class="site-arrow">→</span>
+    </a>
+
+    <a class="site-card c3 reveal" href="https://books.youxingshijia.com" target="_blank">
+      <span class="site-num">站点 03</span>
+      <h3 class="site-name">李守中<br>工程师史观</h3>
+      <p class="site-sub">books.youxingshijia.com</p>
+      <p class="site-desc">高级工程师、宾州访问学者李守中的三部著作——《长城往事》《中国二百年》《渔舟唱晚》，以严谨逻辑剖析中国近现代制度演变。</p>
+      <div class="site-tags">
+        <span class="site-tag">《长城往事》</span>
+        <span class="site-tag">《中国二百年》</span>
+        <span class="site-tag">电子书</span>
+      </div>
+      <span class="site-arrow">→</span>
+    </a>
+
+    <a class="site-card c4 reveal" href="https://art.youxing.com" target="_blank">
+      <span class="site-num">站点 04 · 核心</span>
+      <h3 class="site-name">李有行<br>东方色彩大师</h3>
+      <p class="site-sub">art.youxing.com</p>
+      <p class="site-desc">1905–1982。中国水粉画先驱，四川美术学院创始校长，中国美术馆馆藏艺术家。百余幅画作的数字存档与NFT铸造计划。</p>
+      <div class="site-tags">
+        <span class="site-tag">水粉画先驱</span>
+        <span class="site-tag">NFT</span>
+        <span class="site-tag">RWA</span>
+        <span class="site-tag">画作存档</span>
+      </div>
+      <span class="site-arrow">→</span>
+    </a>
+
+  </div>
+</section>
+
+<!-- MISSION -->
+<section class="mission" id="mission">
+  <p class="section-eyebrow reveal">我们的使命</p>
+  <div class="mission-line reveal"></div>
+  <blockquote class="reveal">
+    时间会模糊面孔，会淡化故事，<br>
+    但<em>数字从不遗忘</em>。<br>
+    我们不是在建网站，<br>
+    我们是在为子孙后代<em>保存证据</em>。
+  </blockquote>
+  <div class="mission-line reveal"></div>
+  <p class="reveal" style="color:rgba(237,229,212,0.5);font-size:12px;letter-spacing:0.12em;">
+    有行世家 · YOUXING HERITAGE · 家族数字档案计划
+  </p>
+  <a class="btn btn-inv reveal" href="#sites">开始探索</a>
+</section>
+
+<!-- NFT TEASER -->
+<section class="nft-teaser reveal">
+  <div>
+    <p class="section-eyebrow">即将上线</p>
+    <h2 class="section-title">李有行画作<br>NFT 数字典藏</h2>
+    <p class="section-body">中国水粉画奠基人的百余幅原作，首次以区块链方式确权存档。峨眉山系列、自贡盐场系列将作为首批典藏上线，配合 RWA 实物资产凭证。</p>
+    <div class="nft-badge">即将开放预约</div>
+    <br>
+    <a class="btn" href="https://art.youxing.com" target="_blank">进入艺术档案馆</a>
+  </div>
+  <div class="nft-artwork reveal">
+    <div class="paint-strokes">
+      <div class="stroke" style="height:55px;background:#8b3a2a;"></div>
+      <div class="stroke" style="height:75px;background:#c96a2e;"></div>
+      <div class="stroke" style="height:48px;background:#d4923a;"></div>
+      <div class="stroke" style="height:82px;background:#4a7a3e;"></div>
+      <div class="stroke" style="height:62px;background:#2d5e3a;"></div>
+      <div class="stroke" style="height:90px;background:#1a4a72;"></div>
+      <div class="stroke" style="height:44px;background:#3a6e8a;"></div>
+      <div class="stroke" style="height:68px;background:#5a3268;"></div>
+    </div>
+    <p style="font-size:11px;color:var(--slate);letter-spacing:0.1em;margin-top:16px;font-family:'Lora',serif;font-style:italic;">
+      峨眉山系列 · 1947
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">有行<span>世家</span></div>
+  <div class="footer-links">
+    <a href="https://blog.youxingshijia.com">出海博客</a>
+    <a href="https://story.youxingshijia.com">旅德故事</a>
+    <a href="https://books.youxingshijia.com">守中著作</a>
+    <a href="https://art.youxingshijia.com">有行艺术</a>
+  </div>
+  <p class="footer-copy">© 2024 有行世家 YouXing Heritage · 四代数字传承计划 · youxingshijia.com</p>
+</footer>
+
+<script>
+const reveals = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('visible'), i * 80);
+      io.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1 });
+reveals.forEach(el => io.observe(el));
+</script>
+</body>
+</html>
