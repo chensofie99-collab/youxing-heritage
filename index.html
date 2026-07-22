@@ -1,28 +1,111 @@
 <!DOCTYPE html>
-<html lang="zh-CN" id="html-root">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>有行世家 · YouXing Heritage · Yǒu Xíng Shì Jiā</title>
-<meta name="description" content="有行世家——族世传承数字珍版。几代人的生命印记，艺术、历史、英烈、AI时代出海。A century of Chinese family stories, preserved forever.">
+
+<!-- ═══ ① TITLE ═══ -->
+<title>有行世家 · YouXing Heritage · 数代人跨越百年的生命印记</title>
+
+<!-- ═══ ② META DESCRIPTION（必须）═══ -->
+<meta name="description" content="有行世家——始于1869年李白民走出四川。画家李有行留学法国，英烈李有幹长空殉国，学者李守中著史三部，工程师李兆庆旅德十八年。数代人跨越百年的生命印记，族世传承数字珍版。">
+
+<!-- ═══ ③ CANONICAL & HREFLANG ═══ -->
+<link rel="canonical" href="https://youxingshijia.com/" />
+<link rel="alternate" hreflang="zh" href="https://youxingshijia.com/" />
+<link rel="alternate" hreflang="en" href="https://youxingshijia.com/index_en.html" />
+<link rel="alternate" hreflang="de" href="https://youxingshijia.com/index_de.html" />
+<link rel="alternate" hreflang="x-default" href="https://youxingshijia.com/" />
+
+<!-- ═══ ④ OPEN GRAPH — 微信/微博分享必须（新增）═══ -->
+<meta property="og:type"        content="website">
+<meta property="og:url"         content="https://youxingshijia.com/">
+<meta property="og:title"       content="有行世家 · 数代人跨越百年的生命印记">
+<meta property="og:description" content="始于1869年李白民走出四川。画家李有行、英烈李有幹、学者李守中、工程师李兆庆——一部家族叙事，让亲历者来讲。">
+<meta property="og:image"       content="https://youxingshijia.com/photo-liyougan.jpg">
+<meta property="og:image:alt"   content="李有幹，中华民国空军中尉，戎装照，1937年">
+<meta property="og:image:width" content="800">
+<meta property="og:locale"      content="zh_CN">
+<meta property="og:site_name"   content="有行世家 YouXing Heritage">
+
+<!-- ═══ ⑤ TWITTER/X CARD（新增）═══ -->
+<meta name="twitter:card"        content="summary_large_image">
+<meta name="twitter:title"       content="有行世家 · 数代人跨越百年的生命印记">
+<meta name="twitter:description" content="始于1869年李白民走出四川。四代出洋，族世传承。">
+<meta name="twitter:image"       content="https://youxingshijia.com/photo-liyougan.jpg">
+
+<!-- ═══ ⑥ FAVICON — "行"字墨色（新增）═══ -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%232e2820'/><text y='82' x='8' font-size='76' fill='%23d4af6a' font-family='serif'>行</text></svg>">
+<link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%232e2820'/><text y='82' x='8' font-size='76' fill='%23d4af6a' font-family='serif'>行</text></svg>">
+
+<!-- ═══ ⑦ FONTS — 加 crossorigin 优化预连接（已修正）═══ -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Serif+Display:ital@0;1&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+<!-- ═══ ⑧ JSON-LD STRUCTURED DATA — 帮助 Google 和 AI 引擎理解页面（新增）═══ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "有行世家 YouXing Heritage",
+      "url": "https://youxingshijia.com/",
+      "description": "有行世家——数代人跨越百年的生命印记。始于1869年李白民走出四川，四代出洋，族世传承。",
+      "inLanguage": ["zh-CN", "en", "de"],
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://youxingshijia.com/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "李有行",
+      "alternateName": "Li Youxing",
+      "birthDate": "1905",
+      "birthPlace": "四川梓潼",
+      "jobTitle": "画家，美术教育家",
+      "description": "中国水粉画先驱，四川美术学院创始校长，中国美术馆馆藏艺术家"
+    },
+    {
+      "@type": "Person",
+      "name": "李有幹",
+      "alternateName": "Li Yougan",
+      "birthDate": "1913",
+      "deathDate": "1937-09-18",
+      "jobTitle": "中华民国空军中尉飞行员",
+      "description": "抗日航空英烈，1937年九一八夜袭上海日军，壮烈殉国，时年24岁"
+    }
+  ]
+}
+</script>
+
 <style>
   :root {
-    --ink: #18140f;
-    --ink-soft: #2e2820;
-    --gold: #b8963e;
+    --ink:        #18140f;
+    --ink-soft:   #2e2820;
+    --ink-light:  #5a5248;
+    --gold:       #b8963e;
     --gold-light: #d4af6a;
-    --cream: #f7f2ea;
+    --gold-pale:  #ecdba8;
+    --cream:      #f7f2ea;
     --cream-dark: #ede5d4;
-    --sage: #7a8f7c;
-    --rust: #8b3a2a;
-    --slate: #5a6472;
-    --white: #fdfaf5;
-    --crimson: #7a1a1a;
+    --cream-mid:  #e0d4be;
+    --white:      #fdfaf5;
+    --slate:      #5a6472;
+    --rust:       #8b3a2a;
   }
+
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  html { font-size: 16px; scroll-behavior: smooth; }
+
+  html {
+    scroll-behavior: smooth;
+    /* 固定导航高度补偿：lang-bar(32px) + nav(52px) = 84px */
+    scroll-padding-top: 84px;
+  }
+
   body {
     background: var(--white);
     color: var(--ink);
@@ -31,7 +114,7 @@
     overflow-x: hidden;
   }
 
-  /* ─── LANG SWITCHER ─── */
+  /* ─── 语言切换栏 ─── */
   .lang-bar {
     position: fixed; top: 0; left: 0; right: 0; z-index: 200;
     height: 32px;
@@ -40,467 +123,560 @@
     padding: 0 5vw; gap: 4px;
   }
   .lang-btn {
-    font-size: 11px; letter-spacing: 0.1em; padding: 3px 10px;
-    background: transparent; border: 1px solid transparent;
-    color: rgba(247,242,234,0.5); cursor: pointer;
-    border-radius: 2px; transition: all 0.2s; font-family: inherit;
+    font-size: 11px; letter-spacing: 0.1em;
+    color: rgba(247,242,234,0.4);
+    text-decoration: none; padding: 3px 10px;
+    border-radius: 2px; transition: all 0.2s;
+    border: 1px solid transparent;
   }
-  .lang-btn:hover { color: var(--gold-light); border-color: rgba(212,175,106,0.3); }
-  .lang-btn.active { color: var(--gold-light); border-color: rgba(212,175,106,0.5); background: rgba(212,175,106,0.08); }
+  .lang-btn:hover { color: var(--gold-light); }
+  .lang-btn.active {
+    color: var(--gold-light);
+    border-color: rgba(212,175,106,0.5);
+    background: rgba(212,175,106,0.08);
+  }
 
-  /* ─── NAV ─── */
+  /* ─── 导航栏 ─── */
   nav {
     position: fixed; top: 32px; left: 0; right: 0; z-index: 100;
     display: flex; align-items: center; justify-content: space-between;
     padding: 0 5vw; height: 52px;
-    background: rgba(253,250,245,0.93);
-    backdrop-filter: blur(12px);
+    background: rgba(253,250,245,0.94);
+    backdrop-filter: blur(14px);
     border-bottom: 1px solid rgba(184,150,62,0.15);
   }
-  .nav-brand { font-size: 15px; font-weight: 600; letter-spacing: 0.1em; color: var(--ink); text-decoration: none; }
+  .nav-brand {
+    font-size: 15px; font-weight: 700; letter-spacing: 0.1em;
+    color: var(--ink); text-decoration: none;
+  }
   .nav-brand span { color: var(--gold); }
   .nav-links { display: flex; gap: 24px; }
-  .nav-links a { font-size: 12px; letter-spacing: 0.07em; color: var(--slate); text-decoration: none; transition: color 0.2s; }
-  .nav-links a:hover { color: var(--gold); }
-  @media (max-width: 600px) { .nav-links { display: none; } }
-
-  /* ─── HERO ─── */
-  .hero {
-    min-height: 100svh;
-    display: grid; place-items: center; text-align: center;
-    padding: 112px 6vw 60px;
-    background: var(--white); position: relative; overflow: hidden;
+  .nav-link {
+    font-size: 12px; letter-spacing: 0.07em;
+    color: var(--slate); text-decoration: none; transition: color 0.2s;
   }
+  .nav-link:hover { color: var(--gold); }
+
+  /* ─── 移动端菜单按钮 ─── */
+  .nav-toggle {
+    display: none; flex-direction: column; justify-content: center; gap: 5px;
+    width: 32px; height: 32px; background: none; border: none; cursor: pointer;
+    padding: 0; -webkit-tap-highlight-color: transparent;
+  }
+  .nav-toggle span {
+    display: block; width: 100%; height: 2px; background: var(--ink-soft);
+    border-radius: 1px; transition: transform 0.25s, opacity 0.25s;
+  }
+  .nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-toggle.open span:nth-child(2) { opacity: 0; }
+  .nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  .mobile-menu {
+    position: fixed; top: 84px; left: 0; right: 0; z-index: 99;
+    background: var(--white); border-bottom: 1px solid rgba(184,150,62,0.15);
+    display: flex; flex-direction: column;
+    max-height: 0; overflow: hidden; transition: max-height 0.3s ease;
+  }
+  .mobile-menu.open { max-height: 240px; }
+  .mobile-menu-link {
+    padding: 15px 6vw; font-size: 13px; letter-spacing: 0.06em;
+    color: var(--ink-soft); text-decoration: none;
+    border-bottom: 1px solid rgba(184,150,62,0.08);
+  }
+  .mobile-menu-link:last-child { border-bottom: none; }
+
+  @media (max-width: 600px) {
+    .nav-links { display: none; }
+    .nav-toggle { display: flex; }
+  }
+  @media (min-width: 601px) {
+    .mobile-menu { display: none; }
+  }
+
+  /* ─── 动画 ─── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(14px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  /* ⑨ 修复 scrollPulse — 最小值 0.4，频率 2.5s（原 0.15 / 4.5s 几乎不可见）*/
+  @keyframes scrollPulse {
+    0%, 100% { transform: scaleY(1);   opacity: 0.6; }
+    50%       { transform: scaleY(0.4); opacity: 1; }
+  }
+  .rev {
+    opacity: 0; transform: translateY(16px);
+    transition: opacity 0.75s, transform 0.75s;
+  }
+  .rev.on { opacity: 1; transform: none; }
+
+  /* ─── 首页英雄区 ─── */
+  .hero {
+    height: 100vh;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    text-align: center;
+    padding: 84px 6vw 48px;
+    position: relative;
+  }
+  /* 背景微纹理 */
   .hero::before {
     content: '';
-    position: absolute; inset: 0;
+    position: absolute; inset: 0; pointer-events: none;
     background:
-      radial-gradient(ellipse 60% 40% at 15% 80%, rgba(184,150,62,0.06) 0%, transparent 70%),
-      radial-gradient(ellipse 50% 30% at 85% 20%, rgba(122,143,124,0.05) 0%, transparent 70%);
-    pointer-events: none;
+      radial-gradient(ellipse 60% 40% at 15% 78%, rgba(184,150,62,0.05), transparent 65%),
+      radial-gradient(ellipse 50% 30% at 85% 20%, rgba(122,143,124,0.04), transparent 65%);
   }
-  .hero-eyebrow { font-size: 11px; letter-spacing: 0.22em; color: var(--gold); text-transform: uppercase; margin-bottom: 20px; opacity: 0; animation: fadeUp 0.8s 0.2s forwards; }
-  .hero-kanji { font-size: clamp(52px, 13vw, 100px); font-weight: 700; line-height: 1; color: var(--ink); letter-spacing: 0.05em; opacity: 0; animation: fadeUp 0.8s 0.4s forwards; }
+  .hero-kanji {
+    font-size: clamp(52px, 13vw, 100px);
+    font-weight: 700; letter-spacing: 0.06em; color: var(--ink);
+    line-height: 1;
+  }
   .hero-kanji span { color: var(--gold); }
-  .hero-en { font-family: 'DM Serif Display', serif; font-style: italic; font-size: clamp(13px, 2.8vw, 19px); color: var(--slate); letter-spacing: 0.04em; margin-top: 10px; opacity: 0; animation: fadeUp 0.8s 0.55s forwards; }
-  .hero-line { width: 48px; height: 1px; background: var(--gold-light); margin: 28px auto; opacity: 0; animation: fadeIn 0.8s 0.7s forwards; }
-  .hero-sub { font-size: clamp(13px, 2.2vw, 15px); line-height: 1.95; color: var(--slate); max-width: 500px; margin: 0 auto; opacity: 0; animation: fadeUp 0.8s 0.8s forwards; }
-  .hero-scroll { position: absolute; bottom: 28px; left: 50%; transform: translateX(-50%); font-size: 11px; letter-spacing: 0.15em; color: var(--gold-light); display: flex; flex-direction: column; align-items: center; gap: 8px; opacity: 0; animation: fadeIn 1.2s 1.4s forwards; }
-  .scroll-line { width: 1px; height: 36px; background: var(--gold-light); animation: scrollPulse 2s 1.6s infinite; }
+  .hero-en {
+    font-family: 'Lora', serif; font-style: italic;
+    font-size: clamp(14px, 2.8vw, 20px);
+    color: var(--slate); margin-top: 12px;
+    opacity: 0; animation: fadeUp 1s 0.5s forwards;
+  }
+  .hero-rule {
+    width: 44px; height: 1px; background: var(--gold-light);
+    margin: 24px auto 0;
+    opacity: 0; animation: fadeUp 1s 0.8s forwards;
+  }
+  /* 向下提示 */
+  .scroll-indicator {
+    position: absolute; bottom: 36px;
+    display: flex; flex-direction: column; align-items: center; gap: 8px;
+    color: var(--gold-light); font-size: 11px; letter-spacing: 0.2em;
+    opacity: 0; animation: fadeUp 1s 1.2s forwards;
+  }
+  .scroll-line {
+    width: 1.5px; height: 40px; background: var(--gold-light);
+    transform-origin: top;
+    animation: scrollPulse 2.5s infinite ease-in-out; /* ⑨ 已修正 */
+  }
 
-  /* ─── SECTIONS ─── */
-  section { padding: 80px 6vw; }
-  .section-eyebrow { font-size: 11px; letter-spacing: 0.2em; color: var(--gold); text-transform: uppercase; margin-bottom: 12px; }
-  .section-title { font-size: clamp(22px, 5vw, 34px); font-weight: 600; line-height: 1.3; color: var(--ink); max-width: 600px; }
-  .section-body { font-size: 14px; line-height: 1.95; color: var(--slate); max-width: 520px; margin-top: 14px; }
+  /* ─── 简介区 ─── */
+  /* ⑩ 去掉 min-height:100vh，改为合理 padding，两行文字不再占满全屏 */
+  .intro-section {
+    background: var(--cream);
+    padding: 80px 6vw;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    text-align: center;
+    border-top: 1px solid var(--cream-dark);
+  }
+  .intro-section h2 {
+    font-size: clamp(20px, 4vw, 30px);
+    font-weight: 600; line-height: 1.5;
+    color: var(--ink); margin-bottom: 20px;
+    max-width: 700px;
+  }
+  .intro-section h2 span { color: var(--gold); }
+  .intro-section p {
+    font-size: 14px; line-height: 2.2;
+    color: var(--slate); max-width: 680px;
+  }
+  /* ⑪ 装饰分隔线 */
+  .intro-ornament {
+    width: 40px; height: 1px; background: var(--gold);
+    margin: 24px auto 0; opacity: 0.5;
+  }
 
-  /* ─── ABOUT ─── */
-  .about { background: var(--cream); display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
-  @media (max-width: 700px) { .about { grid-template-columns: 1fr; gap: 32px; } }
-  .year-bar { display: flex; align-items: flex-start; gap: 14px; padding: 12px 0; border-bottom: 1px solid rgba(184,150,62,0.15); }
-  .year-bar:last-child { border-bottom: none; }
-  .year-num { font-family: 'Lora', serif; font-style: italic; font-size: 13px; color: var(--gold); min-width: 42px; padding-top: 1px; }
-  .year-text { font-size: 12px; color: var(--ink-soft); line-height: 1.6; }
+  /* ─── 时间轴 ─── */
+  .timeline-section {
+    padding: 80px 6vw;
+    display: flex; align-items: center;
+  }
+  .timeline {
+    max-width: 800px; margin: 0 auto; width: 100%;
+  }
+  .timeline-heading {
+    font-size: 11px; letter-spacing: 0.22em; color: var(--gold);
+    text-transform: uppercase; font-family: 'Lora', serif; font-style: italic;
+    margin-top: 32px; display: block;
+    border-bottom: 1px solid rgba(184,150,62,0.18);
+    padding-bottom: 7px;
+  }
+  .timeline-heading:first-child { margin-top: 0; }
+  .timeline-item {
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(184,150,62,0.08);
+    font-size: 14px; color: var(--ink-soft);
+    display: flex; justify-content: space-between; align-items: center;
+    text-decoration: none; transition: color 0.2s, background 0.2s;
+    border-radius: 2px;
+  }
+  .timeline-item:hover { color: var(--gold); }
+  .timeline-item-text { display: flex; align-items: baseline; gap: 10px; flex: 1; }
+  .timeline-year {
+    font-family: 'Lora', serif; font-style: italic;
+    font-size: 13px; color: var(--gold); min-width: 36px; flex-shrink: 0;
+  }
+  .timeline-arrow {
+    color: var(--gold-light); font-size: 16px; margin-left: 12px;
+    transition: transform 0.2s; flex-shrink: 0;
+  }
+  .timeline-item:hover .timeline-arrow { transform: translateX(5px); }
 
-  /* ─── SITES GRID ─── */
-  .sites { background: var(--white); }
-  .sites-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 44px; }
-  @media (max-width: 560px) { .sites-grid { grid-template-columns: 1fr; } }
-
-  .site-card {
-    border: 1px solid var(--cream-dark); border-radius: 4px;
-    padding: 26px 22px 22px; text-decoration: none; display: block;
-    position: relative; overflow: hidden;
-    transition: border-color 0.25s, transform 0.25s;
+  /* ─── 站点卡片区 ─── */
+  .sites-section {
+    padding: 72px 6vw;
     background: var(--white);
+    border-top: 1px solid var(--cream-dark);
   }
-  .site-card::before {
+  .section-label {
+    font-size: 11px; letter-spacing: 0.22em; color: var(--gold);
+    text-transform: uppercase; font-family: 'Lora', serif; font-style: italic;
+    margin-bottom: 28px; display: flex; align-items: center; gap: 14px;
+    max-width: 1000px; margin-left: auto; margin-right: auto;
+  }
+  .section-label::after { content: ''; flex: 1; height: 1px; background: var(--cream-dark); }
+
+  .row-container {
+    max-width: 1000px; margin: 0 auto 20px;
+    display: grid; grid-template-columns: 1fr; gap: 20px;
+  }
+  .gen2-row { grid-template-columns: repeat(2, 1fr); }
+
+  /* ⑫ 卡片 — 去掉 min-height:280px（已修正），内容自然决定高度 */
+  .long-frame {
+    border: 1px solid var(--cream-dark); border-radius: 4px;
+    padding: 28px 24px 24px;
+    text-decoration: none; background: var(--white);
+    display: flex; flex-direction: column; align-items: center;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  .long-frame:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.07); }
+  .long-frame::before {
     content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    border-radius: 4px 4px 0 0;
     background: var(--card-accent, var(--gold));
-    transform: scaleX(0); transform-origin: left; transition: transform 0.3s;
+    transform: scaleX(0); transform-origin: left;
+    transition: transform 0.3s;
   }
-  .site-card:hover { border-color: var(--card-accent, var(--gold)); transform: translateY(-3px); }
-  .site-card:hover::before { transform: scaleX(1); }
-  .site-card.c1 { --card-accent: #1D9E75; }
-  .site-card.c2 { --card-accent: #534AB7; }
-  .site-card.c3 { --card-accent: #b8963e; }
-  .site-card.c4 { --card-accent: #8b3a2a; }
-  .site-card.c5 { --card-accent: #7a1a1a; background: #fdf8f8; }
-  /* hero card spans full width on mobile */
-  .site-card.c5-hero { grid-column: 1 / -1; }
+  .long-frame:hover::before { transform: scaleX(1); }
 
-  .site-num { font-family: 'Lora', serif; font-style: italic; font-size: 11px; letter-spacing: 0.1em; color: var(--card-accent, var(--gold)); margin-bottom: 12px; display: block; }
-  .site-name { font-size: 17px; font-weight: 600; color: var(--ink); line-height: 1.3; margin-bottom: 5px; }
-  .site-sub { font-size: 11px; color: var(--slate); letter-spacing: 0.05em; font-family: 'Lora', serif; font-style: italic; margin-bottom: 12px; }
-  .site-desc { font-size: 12px; color: var(--slate); line-height: 1.75; margin-bottom: 16px; }
-  .site-tags { display: flex; flex-wrap: wrap; gap: 5px; }
-  .site-tag { font-size: 10px; letter-spacing: 0.07em; padding: 3px 9px; border: 1px solid currentColor; border-radius: 2px; color: var(--card-accent, var(--gold)); opacity: 0.8; }
-  .site-arrow { position: absolute; bottom: 20px; right: 20px; font-size: 16px; color: var(--card-accent, var(--gold)); opacity: 0; transform: translateX(-4px); transition: opacity 0.2s, transform 0.2s; }
-  .site-card:hover .site-arrow { opacity: 1; transform: translateX(0); }
+  .frame-gen1  { --card-accent: #1D9E75; }
+  .frame-gen1:hover  { border-color: #1D9E75; }
+  .frame-art   { --card-accent: var(--gold); }
+  .frame-art:hover   { border-color: var(--gold); }
+  .frame-hero  { --card-accent: var(--rust); }
+  .frame-hero:hover  { border-color: var(--rust); }
+  .frame-gen3  { --card-accent: #534AB7; }
+  .frame-gen3:hover  { border-color: #534AB7; }
+  .frame-gen4  { --card-accent: #8b3a2a; }
+  .frame-gen4:hover  { border-color: #8b3a2a; }
 
-  /* hero card layout with photo */
-  .hero-card-inner { display: flex; gap: 20px; align-items: flex-start; }
-  .hero-card-photo { width: 80px; flex-shrink: 0; border-radius: 2px; overflow: hidden; border: 1px solid rgba(122,26,26,0.2); }
-  .hero-card-photo img { width: 100%; display: block; filter: sepia(0.15) contrast(1.05); }
-  .hero-card-body { flex: 1; }
-  .martyr-badge { display: inline-block; font-size: 10px; letter-spacing: 0.12em; padding: 2px 8px; background: rgba(122,26,26,0.08); color: #7a1a1a; border: 1px solid rgba(122,26,26,0.2); border-radius: 2px; margin-bottom: 8px; }
+  .frame-arrow {
+    position: absolute; bottom: 18px; right: 18px;
+    font-size: 18px; color: var(--gold-light);
+    opacity: 0; transition: all 0.3s;
+  }
+  .long-frame:hover .frame-arrow { opacity: 1; transform: translateX(4px); }
 
-  /* ─── MISSION ─── */
-  .mission { background: var(--ink); text-align: center; padding: 80px 6vw; }
-  .mission .section-eyebrow { color: var(--gold-light); }
-  .mission blockquote { font-family: 'DM Serif Display', serif; font-style: italic; font-size: clamp(20px, 4.5vw, 34px); color: var(--cream); line-height: 1.55; max-width: 680px; margin: 0 auto; letter-spacing: 0.01em; }
-  .mission blockquote em { color: var(--gold-light); font-style: normal; }
-  .mission-line { width: 1px; height: 48px; background: var(--gold); margin: 32px auto; opacity: 0.4; }
-  .mission p { font-size: 12px; color: rgba(237,229,212,0.45); letter-spacing: 0.1em; text-transform: uppercase; }
+  .card-gen-tag {
+    font-size: 10px; letter-spacing: 0.12em;
+    color: var(--gold-light); font-family: 'Lora', serif; font-style: italic;
+    align-self: flex-start; margin-bottom: 4px;
+  }
 
-  /* ─── BUTTONS ─── */
-  .btn { display: inline-block; margin-top: 28px; padding: 12px 28px; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); border: 1px solid var(--gold); text-decoration: none; transition: background 0.2s, color 0.2s; border-radius: 2px; }
-  .btn:hover { background: var(--gold); color: var(--white); }
-  .btn-inv { color: var(--cream); border-color: rgba(237,229,212,0.35); }
-  .btn-inv:hover { background: rgba(237,229,212,0.1); color: var(--cream); }
+  /* ⑬ 照片容器 — 固定 square，加 lazy loading */
+  .img-box {
+    display: flex; gap: 14px;
+    margin: 18px 0 4px; justify-content: center; width: 100%;
+  }
+  .img-box.single { justify-content: center; }
+  .small-img {
+    height: 140px; width: 140px;
+    object-fit: cover; object-position: center top;
+    border-radius: 3px;
+    border: 1px solid rgba(46,40,32,0.08);
+    transition: transform 0.4s;
+    display: block;
+  }
+  .long-frame:hover .small-img { transform: scale(1.03); }
 
-  /* ─── FOOTER ─── */
-  footer { background: var(--ink-soft); padding: 36px 6vw; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
-  .footer-brand { font-size: 14px; font-weight: 600; color: var(--cream); letter-spacing: 0.1em; }
-  .footer-brand span { color: var(--gold-light); }
-  .footer-links { display: flex; gap: 18px; flex-wrap: wrap; }
-  .footer-links a { font-size: 11px; color: rgba(237,229,212,0.4); text-decoration: none; letter-spacing: 0.06em; transition: color 0.2s; }
-  .footer-links a:hover { color: var(--gold-light); }
-  .footer-copy { font-size: 10px; color: rgba(237,229,212,0.22); letter-spacing: 0.06em; width: 100%; }
+  .card-name {
+    font-size: 15px; font-weight: 600; letter-spacing: 0.08em;
+    color: var(--ink); margin-top: 14px;
+  }
+  .card-sub {
+    font-size: 11px; color: var(--slate); margin-top: 4px;
+    font-family: 'Lora', serif; font-style: italic; letter-spacing: 0.06em;
+  }
 
-  /* ─── ANIMATIONS ─── */
-  @keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
-  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-  @keyframes scrollPulse { 0%, 100% { transform: scaleY(1); opacity: 0.6; } 50% { transform: scaleY(0.5); opacity: 1; } }
-  .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.7s, transform 0.7s; }
-  .reveal.visible { opacity: 1; transform: none; }
+  /* ─── 页脚 ─── */
+  footer {
+    background: var(--ink-soft);
+    padding: 36px 6vw;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 16px;
+  }
+  .ft-brand { font-size: 13px; font-weight: 600; color: var(--cream); letter-spacing: 0.1em; }
+  .ft-brand span { color: var(--gold-light); }
+  .ft-links { display: flex; gap: 16px; flex-wrap: wrap; }
+  .ft-links a {
+    font-size: 11px; color: rgba(237,229,212,0.38);
+    text-decoration: none; letter-spacing: 0.06em; transition: color 0.2s;
+  }
+  .ft-links a:hover { color: var(--gold-light); }
+  .ft-copy { width: 100%; font-size: 10px; color: rgba(237,229,212,0.2); letter-spacing: 0.06em; }
+  .ft-copy a { color: rgba(237,229,212,0.35); text-decoration: none; transition: color 0.2s; }
+  .ft-copy a:hover { color: var(--gold-light); }
 
-  /* hide all lang content by default */
-  [data-lang] { display: none; }
-  [data-lang].active { display: block; }
-  [data-lang-inline] { display: none; }
-  [data-lang-inline].active { display: inline; }
+  /* ─── 响应式 ─── */
+  @media (max-width: 750px) {
+    .gen2-row { grid-template-columns: 1fr; }
+    .small-img { height: 110px; width: 110px; }
+    .intro-section { padding: 60px 6vw; }
+    .timeline-section, .sites-section { padding: 56px 6vw; }
+  }
+  @media (max-width: 600px) {
+    footer { justify-content: center; text-align: center; padding: 32px 6vw; }
+    .ft-links { justify-content: center; }
+    .timeline-item { font-size: 13px; }
+    .timeline-item-text { flex-wrap: wrap; gap: 4px 10px; }
+  }
+  @media (max-width: 480px) {
+    .small-img { height: 90px; width: 90px; }
+    .hero { padding: 84px 5vw 40px; }
+    .long-frame { padding: 24px 16px 20px; }
+  }
+  @media (max-width: 360px) {
+    .hero-kanji { font-size: clamp(44px, 15vw, 64px); }
+    .nav-brand { font-size: 13px; }
+  }
 </style>
 </head>
 <body>
 
-<!-- LANG BAR -->
+<!-- 语言切换栏 -->
 <div class="lang-bar">
-  <button class="lang-btn active" onclick="setLang('zh')" id="btn-zh">中文</button>
-  <button class="lang-btn" onclick="setLang('en')" id="btn-en">English</button>
-  <button class="lang-btn" onclick="setLang('de')" id="btn-de">Deutsch</button>
+  <a href="index.html"    class="lang-btn active">CN</a>
+  <a href="index_en.html" class="lang-btn">EN</a>
+  <a href="index_de.html" class="lang-btn">DE</a>
 </div>
 
-<!-- NAV -->
+<!-- 导航 -->
 <nav>
-  <a class="nav-brand" href="#">有行<span>世家</span>
-    <span data-lang-inline="en" style="font-weight:300;letter-spacing:0.06em;font-size:13px;"> · YouXing Heritage</span>
-    <span data-lang-inline="de" style="font-weight:300;letter-spacing:0.06em;font-size:13px;"> · YouXing Erbe</span>
-  </a>
+  <a class="nav-brand" href="#">有行<span>世家</span></a>
   <div class="nav-links">
-    <a href="#sites" data-lang="zh">家族档案</a>
-    <a href="#sites" data-lang="en">Archive</a>
-    <a href="#sites" data-lang="de">Archiv</a>
-    <a href="#about" data-lang="zh">关于</a>
-    <a href="#about" data-lang="en">About</a>
-    <a href="#about" data-lang="de">Über uns</a>
-    <a href="#mission" data-lang="zh">使命</a>
-    <a href="#mission" data-lang="en">Mission</a>
-    <a href="#mission" data-lang="de">Mission</a>
+    <a href="#timeline" class="nav-link">家族年谱</a>
+    <a href="#sites"    class="nav-link">进入各站</a>
   </div>
+  <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#timeline" class="mobile-menu-link">家族年谱</a>
+  <a href="#sites" class="mobile-menu-link">进入各站</a>
+  <a href="mailto:support@youxingshijia.com" class="mobile-menu-link">联系我们</a>
+</div>
 
-<!-- HERO -->
-<section class="hero">
-  <div>
-    <!-- ZH -->
-    <p class="hero-eyebrow" data-lang="zh">有行世家 · 族世传承数字珍版</p>
-    <p class="hero-eyebrow" data-lang="en">YouXing Heritage · Digital Treasure of Generations</p>
-    <p class="hero-eyebrow" data-lang="de">YouXing Erbe · Digitales Erbe der Generationen</p>
-
-    <h1 class="hero-kanji">有<span>行</span>世家</h1>
-
-    <p class="hero-en" data-lang="zh">A Century of Stories, Preserved Forever</p>
-    <p class="hero-en" data-lang="en">Four Generations. One Living Archive.</p>
-    <p class="hero-en" data-lang="de">Vier Generationen. Ein lebendiges Archiv.</p>
-
-    <div class="hero-line"></div>
-
-    <p class="hero-sub" data-lang="zh">几代人的生命印记，跨越百年。<br>艺术家、工程师、英烈、旅居者、AI时代出海一辈——<br>每一个故事，都是族世传承的数字珍版。</p>
-    <p class="hero-sub" data-lang="en">The life imprints of generations, spanning a century.<br>Artists, engineers, martyrs, diaspora voices, and a generation navigating the AI era—<br>every story, a digital treasure of the lineage.</p>
-    <p class="hero-sub" data-lang="de">Lebensabdrücke über Generationen, ein Jahrhundert umspannend.<br>Künstler, Ingenieure, Märtyrer, Diaspora und eine Generation im KI-Zeitalter—<br>jede Geschichte, ein digitales Erbe der Familie.</p>
-
-    <a class="btn" href="#sites" data-lang="zh">进入家族档案</a>
-    <a class="btn" href="#sites" data-lang="en">Explore the Archive</a>
-    <a class="btn" href="#sites" data-lang="de">Archiv erkunden</a>
-  </div>
-  <div class="hero-scroll">
-    <span data-lang="zh">向下滚动</span>
-    <span data-lang="en">Scroll</span>
-    <span data-lang="de">Scrollen</span>
+<!-- ══════════════════════════════════
+     PAGE 1 · 英雄首屏
+══════════════════════════════════ -->
+<header class="hero">
+  <h1 class="hero-kanji">有<span>行</span>世家</h1>
+  <p class="hero-en">YouXing Heritage · 族世传承数字珍版</p>
+  <div class="hero-rule"></div>
+  <div class="scroll-indicator">
+    <span>向下滚动</span>
     <div class="scroll-line"></div>
   </div>
+</header>
+
+<!-- ══════════════════════════════════
+     PAGE 2 · 简介（已修正：去掉 100vh）
+══════════════════════════════════ -->
+<section class="intro-section rev" id="intro">
+  <h2>1905年，一个书生走出四川大山，<br><span>一切从此开始……</span></h2>
+  <p>
+    时代洪流，百年激荡；社会巨变，人间沧桑。<br>
+    一部家族叙事，让亲历者来讲。<br>
+    数字乾坤，AI纪元，家族叙事正走向未来。
+  </p>
+  <div class="intro-ornament"></div>
 </section>
 
-<!-- ABOUT -->
-<section class="about" id="about">
-  <div class="reveal">
-    <p class="section-eyebrow" data-lang="zh">族世传承 · 几代生命印记</p>
-    <p class="section-eyebrow" data-lang="en">Digital Treasure · Generations of Legacy</p>
-    <p class="section-eyebrow" data-lang="de">Digitales Erbe · Generationen der Familie</p>
+<!-- ══════════════════════════════════
+     PAGE 3 · 时间轴
+══════════════════════════════════ -->
+<section class="timeline-section" id="timeline">
+  <div class="timeline">
 
-    <h2 class="section-title" data-lang="zh">从1905年的里昂美术学院，到AI时代出海一辈</h2>
-    <h2 class="section-title" data-lang="en">From Lyon's École des Beaux-Arts, 1905, to the AI-era generation</h2>
-    <h2 class="section-title" data-lang="de">Von der École des Beaux-Arts in Lyon, 1905, bis zur KI-Generation</h2>
-
-    <p class="section-body" data-lang="zh">这是几代人的生命印记，跨越一个多世纪。艺术、工程、抗战英烈、旅居海外的见证者、以及AI时代的出海一辈——每一代人在时代的缝隙里刻下印记。族世传承，数字珍版，凡属这个家族精神血脉中值得被记录的，都在这里永久留存。</p>
-    <p class="section-body" data-lang="en">These are the life imprints of generations, spanning more than a century. Art, engineering, wartime sacrifice, diaspora testimony, and a generation navigating the AI era — each has left its mark. This is a digital treasure of the lineage: every story worth preserving finds its permanent home here.</p>
-    <p class="section-body" data-lang="de">Dies sind die Lebensabdrücke von Generationen über mehr als ein Jahrhundert. Kunst, Ingenieurwesen, Kriegsopfer, Diaspora-Zeugnisse und eine Generation im KI-Zeitalter — jede hat ihre Spuren hinterlassen. Ein digitales Erbe der Familie: jede Geschichte, die es wert ist, bewahrt zu werden, findet hier ihr dauerhaftes Zuhause.</p>
-
-    <a class="btn" href="#mission" data-lang="zh">了解我们的使命</a>
-    <a class="btn" href="#mission" data-lang="en">Our Mission</a>
-    <a class="btn" href="#mission" data-lang="de">Unsere Mission</a>
-  </div>
-
-  <div class="reveal">
-    <div class="year-bar">
-      <span class="year-num">1905</span>
-      <span class="year-text" data-lang="zh">李有行生于四川梓潼 · 后留学法国里昂美术学院 · 东方色彩大师</span>
-      <span class="year-text" data-lang="en">Li Youxing born in Sichuan · studied at Lyon École des Beaux-Arts · Master of Eastern Color</span>
-      <span class="year-text" data-lang="de">Li Youxing geboren in Sichuan · Studium in Lyon · Meister der östlichen Farbe</span>
-    </div>
-    <div class="year-bar">
-      <span class="year-num">1913</span>
-      <span class="year-text" data-lang="zh">李有幹生于北平 · 中央航校第五期 · 1937年九一八夜殉国，时年24岁</span>
-      <span class="year-text" data-lang="en">Li Yougan born in Beijing · Central Aviation School · Killed in action Sept 18, 1937, age 24</span>
-      <span class="year-text" data-lang="de">Li Yougan in Peking geboren · Zentralflugschule · Gefallen am 18. September 1937, 24 Jahre alt</span>
-    </div>
-    <div class="year-bar">
-      <span class="year-num">1933</span>
-      <span class="year-text" data-lang="zh">李守中生于上海 · 高级工程师 · 美国宾州州立大学访问学者 · 著有三部历史著作</span>
-      <span class="year-text" data-lang="en">Li Shouzhong born in Shanghai · Senior engineer · Penn State visiting scholar · Author of three historical works</span>
-      <span class="year-text" data-lang="de">Li Shouzhong in Shanghai geboren · Ingenieur · Gastforscher an der Penn State · Verfasser dreier Geschichtswerke</span>
-    </div>
-    <div class="year-bar">
-      <span class="year-num">196x</span>
-      <span class="year-text" data-lang="zh">李兆庆（鸽豹）旅居德国十八年 · 六七八十年代亲历口述者</span>
-      <span class="year-text" data-lang="en">Li Zhaogian (Gebao) · 18 years in Germany · oral witness to China's 60s–80s</span>
-      <span class="year-text" data-lang="de">Li Zhaogian · 18 Jahre in Deutschland · Zeitzeuge der 1960er–80er Jahre in China</span>
-    </div>
-    <div class="year-bar">
-      <span class="year-num">2004</span>
-      <span class="year-text" data-lang="zh">李氏媳妇大学毕业 · 外贸经理 · 三孩妈妈 · AI时代出海一辈 · 族世传承数字珍版建设者</span>
-      <span class="year-text" data-lang="en">Li family daughter-in-law · foreign trade manager · mother of three · navigating the AI era · building the family's digital legacy</span>
-      <span class="year-text" data-lang="de">Li-Schwiegertochter · Außenhandelsmanagerin · Mutter dreier Kinder · KI-Zeitalter-Generation · Aufbau des digitalen Familienerbes</span>
-    </div>
-    <div class="year-bar">
-      <span class="year-num">2011+</span>
-      <span class="year-text" data-lang="zh">三个孩子出生 · 成长记录 · 家族故事的下一代</span>
-      <span class="year-text" data-lang="en">Three children born · growing up · the next chapter of the family story</span>
-      <span class="year-text" data-lang="de">Drei Kinder geboren · die nächste Generation der Familiengeschichte</span>
-    </div>
-  </div>
-</section>
-
-<!-- SITES -->
-<section class="sites" id="sites">
-  <div class="reveal">
-    <p class="section-eyebrow" data-lang="zh">六个子站 · 六种声音</p>
-    <p class="section-eyebrow" data-lang="en">Six Sites · Six Voices</p>
-    <p class="section-eyebrow" data-lang="de">Sechs Seiten · Sechs Stimmen</p>
-
-    <h2 class="section-title" data-lang="zh">选择你想进入的故事世界</h2>
-    <h2 class="section-title" data-lang="en">Choose the story you want to enter</h2>
-    <h2 class="section-title" data-lang="de">Wähle die Geschichte, die du erkunden möchtest</h2>
-  </div>
-
-  <div class="sites-grid">
-
-    <!-- 01 妈妈博客 -->
-    <a class="site-card c1 reveal" href="https://blog.youxingshijia.com">
-      <span class="site-num">站点 01 · Site 01</span>
-      <h3 class="site-name" data-lang="zh">李氏媳妇·AI时代出海一辈</h3>
-      <h3 class="site-name" data-lang="en">Li Family Daughter-in-Law · The AI-Era Generation</h3>
-      <h3 class="site-name" data-lang="de">Li-Schwiegertochter · Die KI-Generation</h3>
-      <p class="site-sub">blog.youxingshijia.com</p>
-      <p class="site-desc" data-lang="zh">李氏媳妇，04年财务专业毕业，从零外贸到百万出口，从德国外教到AI工具，从代购到加密投资——AI时代出海一辈的第一手记录。</p>
-      <p class="site-desc" data-lang="en">Li family daughter-in-law, finance graduate, foreign trade manager, mother of three — a first-hand record of life in the AI era, from global trade to crypto investing.</p>
-      <p class="site-desc" data-lang="de">Li-Schwiegertochter, Außenhandelsleiterin, dreifache Mutter — ein ehrlicher Erfahrungsbericht aus dem KI-Zeitalter, vom globalen Handel bis zu Kryptoinvestitionen.</p>
-      <div class="site-tags">
-        <span class="site-tag" data-lang="zh">出海</span><span class="site-tag" data-lang="zh">AI</span><span class="site-tag" data-lang="zh">投资</span><span class="site-tag" data-lang="zh">游泳</span>
-        <span class="site-tag" data-lang="en">Trade</span><span class="site-tag" data-lang="en">AI Tools</span><span class="site-tag" data-lang="en">Crypto</span>
-        <span class="site-tag" data-lang="de">Handel</span><span class="site-tag" data-lang="de">KI-Tools</span><span class="site-tag" data-lang="de">Investition</span>
+    <span class="timeline-heading rev">第一代</span>
+    <a href="#gen1" class="timeline-item rev">
+      <div class="timeline-item-text">
+        <span class="timeline-year">1905</span>
+        <span><strong>李白民</strong> 走出四川。旧式读书人，安身帝都。</span>
       </div>
-      <span class="site-arrow">→</span>
+      <span class="timeline-arrow">→</span>
     </a>
 
-    <!-- 02 先生 -->
-    <a class="site-card c2 reveal" href="https://story.youxingshijia.com">
-      <span class="site-num">站点 02 · Site 02</span>
-      <h3 class="site-name" data-lang="zh">旅德十八年·口述历史</h3>
-      <h3 class="site-name" data-lang="en">18 Years in Germany · Oral History</h3>
-      <h3 class="site-name" data-lang="de">18 Jahre in Deutschland · Zeitzeugenberichte</h3>
-      <p class="site-sub">story.youxingshijia.com</p>
-      <p class="site-desc" data-lang="zh">旅居德国十八年的亲历者，讲述中国六十至八十年代那些不能在国内公开讲述的真实故事。</p>
-      <p class="site-desc" data-lang="en">Eighteen years in Germany. True stories from China's 1960s–80s that cannot be told freely on the mainland.</p>
-      <p class="site-desc" data-lang="de">Achtzehn Jahre in Deutschland. Wahre Geschichten aus Chinas 1960ern bis 80ern, die im Inland nicht frei erzählt werden können.</p>
-      <div class="site-tags">
-        <span class="site-tag" data-lang="zh">口述历史</span><span class="site-tag" data-lang="zh">视频档案</span>
-        <span class="site-tag" data-lang="en">Oral history</span><span class="site-tag" data-lang="en">Video archive</span>
-        <span class="site-tag" data-lang="de">Zeitzeugen</span><span class="site-tag" data-lang="de">Videoarchiv</span>
+    <span class="timeline-heading rev">第二代</span>
+    <a href="#gen2-art" class="timeline-item rev">
+      <div class="timeline-item-text">
+        <span class="timeline-year">1926</span>
+        <span><strong>李有行</strong> 留学法国。画家，创建四川美术学院。</span>
       </div>
-      <span class="site-arrow">→</span>
+      <span class="timeline-arrow">→</span>
+    </a>
+    <a href="#gen2-hero" class="timeline-item rev">
+      <div class="timeline-item-text">
+        <span class="timeline-year">1929</span>
+        <span><strong>李有幹</strong> 独闯南洋。空军中尉，殉国。</span>
+      </div>
+      <span class="timeline-arrow">→</span>
     </a>
 
-    <!-- 03 李守中 -->
-    <a class="site-card c3 reveal" href="https://books.youxingshijia.com">
-      <span class="site-num">站点 03 · Site 03</span>
-      <h3 class="site-name" data-lang="zh">李守中·工程师史观</h3>
-      <h3 class="site-name" data-lang="en">Li Shouzhong · An Engineer's View of History</h3>
-      <h3 class="site-name" data-lang="de">Li Shouzhong · Die Sicht eines Ingenieurs auf die Geschichte</h3>
-      <p class="site-sub">books.youxingshijia.com</p>
-      <p class="site-desc" data-lang="zh">高级工程师、宾州访问学者李守中的三部著作——以严谨的工程思维剖析中国近现代制度演变。</p>
-      <p class="site-desc" data-lang="en">Three books by senior engineer and Penn State scholar Li Shouzhong — rigorous engineering thinking applied to China's modern institutional history.</p>
-      <p class="site-desc" data-lang="de">Drei Bücher von Ingenieur und Penn-State-Forscher Li Shouzhong — rigoroses Denken angewendet auf Chinas moderne Geschichte.</p>
-      <div class="site-tags">
-        <span class="site-tag" data-lang="zh">《长城往事》</span><span class="site-tag" data-lang="zh">《中国二百年》</span>
-        <span class="site-tag" data-lang="en">The Great Wall</span><span class="site-tag" data-lang="en">Two Centuries</span>
-        <span class="site-tag" data-lang="de">Drei Bücher</span><span class="site-tag" data-lang="de">E-Book</span>
+    <span class="timeline-heading rev">第三代</span>
+    <a href="#gen3" class="timeline-item rev">
+      <div class="timeline-item-text">
+        <span class="timeline-year">1980</span>
+        <span><strong>李守中</strong> 留学美国。工程师，《長城》等著作者。</span>
       </div>
-      <span class="site-arrow">→</span>
+      <span class="timeline-arrow">→</span>
     </a>
 
-    <!-- 04 李有行 -->
-    <a class="site-card c4 reveal" href="https://art.youxingshijia.com">
-      <span class="site-num">站点 04 · Site 04 · ★</span>
-      <h3 class="site-name" data-lang="zh">李有行·东方色彩大师</h3>
-      <h3 class="site-name" data-lang="en">Li Youxing · Master of Eastern Color</h3>
-      <h3 class="site-name" data-lang="de">Li Youxing · Meister der östlichen Farbe</h3>
-      <p class="site-sub">art.youxingshijia.com</p>
-      <p class="site-desc" data-lang="zh">1905–1982。中国水粉画先驱，四川美术学院创始校长，中国美术馆馆藏艺术家。百余幅画作的数字存档与NFT典藏计划。</p>
-      <p class="site-desc" data-lang="en">1905–1982. Pioneer of Chinese gouache painting, founding president of Sichuan Fine Arts Institute, National Art Museum collection. NFT and RWA digital archiving of over 100 works.</p>
-      <p class="site-desc" data-lang="de">1905–1982. Pionier der chinesischen Gouachemalerei, Gründungsrektor des Sichuan-Kunstinstituts. Digitale Archivierung und NFT-Pläne für über 100 Werke.</p>
-      <div class="site-tags">
-        <span class="site-tag" data-lang="zh">水粉先驱</span><span class="site-tag" data-lang="zh">NFT</span><span class="site-tag" data-lang="zh">RWA</span>
-        <span class="site-tag" data-lang="en">Gouache pioneer</span><span class="site-tag" data-lang="en">NFT</span>
-        <span class="site-tag" data-lang="de">Gouache</span><span class="site-tag" data-lang="de">NFT</span>
+    <span class="timeline-heading rev">第四代</span>
+    <a href="#gen4" class="timeline-item rev">
+      <div class="timeline-item-text">
+        <span class="timeline-year">1986</span>
+        <span><strong>李兆庆</strong> 留学德国。工程师，自媒体人。</span>
       </div>
-      <span class="site-arrow">→</span>
-    </a>
-
-    <!-- 05 李有幹 — FULL WIDTH HERO CARD -->
-    <a class="site-card c5 c5-hero reveal" href="https://hero.youxingshijia.com">
-      <span class="site-num" style="color:#7a1a1a;">站点 05 · Site 05 · Seite 05 &nbsp;·&nbsp;
-        <span data-lang="zh">烈士永久纪念</span>
-        <span data-lang="en">Martyr's Permanent Memorial</span>
-        <span data-lang="de">Ewiges Gedenkmal</span>
-      </span>
-      <div class="hero-card-inner">
-        <div class="hero-card-photo">
-          <img src="yougan-portrait.png" alt="李有幹烈士戎装照 AI修复图">
-        </div>
-        <div class="hero-card-body">
-          <div class="martyr-badge" data-lang="zh">抗日英烈 · 1913–1937 · 时年二十四岁</div>
-          <div class="martyr-badge" data-lang="en">War Martyr · 1913–1937 · Age 24</div>
-          <div class="martyr-badge" data-lang="de">Kriegsmärtyrer · 1913–1937 · 24 Jahre alt</div>
-          <h3 class="site-name" style="color:#3a0a0a;">
-            <span data-lang="zh">李有幹·长空碧血</span>
-            <span data-lang="en">Li Yougan · Blood Across the Sky</span>
-            <span data-lang="de">Li Yougan · Blut am Himmel</span>
-          </h3>
-          <p class="site-sub" style="color:#8b1a1a;">hero.youxingshijia.com</p>
-          <p class="site-desc" data-lang="zh">中华民国空军中尉飞行员。1937年9月18日九一八夜，驾机夜袭上海日军，被高射炮击中，血洒黄浦江上空，壮烈殉国。李有行之胞弟。中国第一代空军飞行员，殉国时年二十四岁，未曾娶妻。</p>
-          <p class="site-desc" data-lang="en">Lieutenant pilot, Republic of China Air Force. On the night of September 18, 1937 — the anniversary of the Manchurian Incident — he flew a night raid against Japanese forces over Shanghai, was struck by anti-aircraft fire, and fell over the Huangpu River. Younger brother of Li Youxing. Age 24. Never married.</p>
-          <p class="site-desc" data-lang="de">Leutnant und Pilot der Luftwaffe der Republik China. Am Abend des 18. September 1937 flog er einen Nachtangriff gegen japanische Streitkräfte über Shanghai, wurde von Flakfeuer getroffen und stürzte über dem Huangpu-Fluss ab. Jüngerer Bruder von Li Youxing. 24 Jahre alt. Unverheiratet.</p>
-          <div class="site-tags" style="margin-top:12px;">
-            <span class="site-tag" style="color:#7a1a1a;" data-lang="zh">淞沪会战</span>
-            <span class="site-tag" style="color:#7a1a1a;" data-lang="zh">笕桥英烈</span>
-            <span class="site-tag" style="color:#7a1a1a;" data-lang="zh">《忆幹弟》全文</span>
-            <span class="site-tag" style="color:#7a1a1a;" data-lang="en">Battle of Shanghai</span>
-            <span class="site-tag" style="color:#7a1a1a;" data-lang="en">Jianqiao Hero</span>
-            <span class="site-tag" style="color:#7a1a1a;" data-lang="en">Memorial</span>
-            <span class="site-tag" style="color:#7a1a1a;" data-lang="de">Schlacht um Shanghai</span>
-            <span class="site-tag" style="color:#7a1a1a;" data-lang="de">Gedenkstätte</span>
-          </div>
-        </div>
-      </div>
-      <span class="site-arrow" style="color:#7a1a1a;">→</span>
+      <span class="timeline-arrow">→</span>
     </a>
 
   </div>
 </section>
 
-<!-- MISSION -->
-<section class="mission" id="mission">
-  <p class="section-eyebrow reveal" data-lang="zh">我们的使命</p>
-  <p class="section-eyebrow reveal" data-lang="en">Our Mission</p>
-  <p class="section-eyebrow reveal" data-lang="de">Unsere Mission</p>
-  <div class="mission-line reveal"></div>
+<section class="sites-section" id="sites">
+  <p class="section-label">进入各站</p>
 
-  <blockquote class="reveal" data-lang="zh">时间会模糊面孔，会淡化故事，<br>但<em>数字从不遗忘</em>。<br>我们不是在建网站，<br>我们是在为子孙后代<em>保存证据</em>。</blockquote>
-  <blockquote class="reveal" data-lang="en">Time blurs faces and fades stories,<br>but <em>the digital never forgets</em>.<br>We are not building websites.<br>We are <em>preserving evidence</em> for those who come after.</blockquote>
-  <blockquote class="reveal" data-lang="de">Die Zeit verwischt Gesichter und lässt Geschichten verblassen,<br>aber <em>das Digitale vergisst nie</em>.<br>Wir bauen keine Webseiten.<br>Wir <em>bewahren Beweise</em> für die, die nach uns kommen.</blockquote>
+  <!-- 第一代 -->
+  <div class="row-container" id="gen1">
+    <a class="long-frame frame-gen1 rev" href="libaimin.html">
+      <span class="card-gen-tag">第一代</span>
+      <div class="img-box">
+        <img src="photo-libaimin.jpg" class="small-img"
+          alt="李白民水粉画像，四川梓潼双板乡人，民国初年任京师警察厅警正"
+          loading="lazy" width="140" height="140">
+        <img src="photo-lixushi.jpg" class="small-img"
+          alt="李徐氏，李白民夫人"
+          loading="lazy" width="140" height="140">
+      </div>
+      <span class="card-name">李白民 · 李徐氏</span>
+      <span class="frame-arrow">→</span>
+    </a>
+  </div>
 
-  <div class="mission-line reveal"></div>
-  <p class="reveal" data-lang="zh">有行世家 · YOUXING HERITAGE · 族世传承数字珍版 · youxingshijia.com</p>
-  <p class="reveal" data-lang="en">YouXing Heritage · Digital Treasure of Generations · youxingshijia.com</p>
-  <p class="reveal" data-lang="de">YouXing Erbe · Digitales Erbe der Generationen · youxingshijia.com</p>
+  <!-- 第二代 -->
+  <div class="row-container gen2-row">
+    <a class="long-frame frame-art rev" href="https://art.youxingshijia.com" id="gen2-art">
+      <span class="card-gen-tag">第二代</span>
+      <div class="img-box single">
+        <img src="photo-liyouxing.jpg" class="small-img"
+          alt="李有行与夫人杨涤玄合影，中国水粉画先驱，四川美术学院创始校长"
+          loading="lazy" width="140" height="140">
+      </div>
+      <span class="card-name">李有行 · 杨涤玄</span>
+      <span class="frame-arrow">→</span>
+    </a>
+    <a class="long-frame frame-hero rev" href="https://hero.youxingshijia.com" id="gen2-hero">
+      <span class="card-gen-tag">第二代</span>
+      <div class="img-box single">
+        <img src="photo-liyougan.jpg" class="small-img"
+          alt="李有幹戎装照，中华民国空军中尉，1937年九一八夜殉国，时年24岁"
+          loading="lazy" width="140" height="140">
+      </div>
+      <span class="card-name">李有幹</span>
+      <span class="frame-arrow">→</span>
+    </a>
+  </div>
 
-  <a class="btn btn-inv reveal" href="#sites" data-lang="zh">开始探索</a>
-  <a class="btn btn-inv reveal" href="#sites" data-lang="en">Start Exploring</a>
-  <a class="btn btn-inv reveal" href="#sites" data-lang="de">Erkunden</a>
+  <!-- 第三代 -->
+  <div class="row-container" id="gen3">
+    <a class="long-frame frame-gen3 rev" href="https://books.youxingshijia.com">
+      <span class="card-gen-tag">第三代</span>
+      <div class="img-box single">
+        <img src="photo-lishouzhong.jpg" class="small-img"
+          alt="李守中与夫人赵淑俭合影，高级工程师，宾州大学访问学者，《长城往事》著者"
+          loading="lazy" width="140" height="140">
+      </div>
+      <span class="card-name">李守中 · 赵淑俭</span>
+      <span class="frame-arrow">→</span>
+    </a>
+  </div>
+
+  <!-- 第四代 -->
+  <div class="row-container" id="gen4">
+    <a class="long-frame frame-gen4 rev" href="https://story.youxingshijia.com">
+      <span class="card-gen-tag">第四代</span>
+      <div class="img-box single">
+        <img src="photo-lizhaogian.jpg" class="small-img"
+          alt="李兆庆与陈海燕结婚照，李兆庆为电气工程师，旅居德国十八年，现为自媒体人"
+          loading="lazy" width="140" height="140">
+      </div>
+      <span class="card-name">李兆庆 · 陈海燕</span>
+      <span class="frame-arrow">→</span>
+    </a>
+  </div>
+
 </section>
 
-<!-- FOOTER -->
+<!-- ══════════════════════════════════
+     FOOTER
+══════════════════════════════════ -->
 <footer>
-  <div class="footer-brand">有行<span>世家</span> · YouXing Heritage</div>
-  <div class="footer-links">
-    <a href="https://blog.youxingshijia.com" data-lang="zh">出海博客</a>
-    <a href="https://blog.youxingshijia.com" data-lang="en">Blog</a>
-    <a href="https://blog.youxingshijia.com" data-lang="de">Blog</a>
-    <a href="https://story.youxingshijia.com" data-lang="zh">旅德故事</a>
-    <a href="https://story.youxingshijia.com" data-lang="en">Germany Stories</a>
-    <a href="https://story.youxingshijia.com" data-lang="de">Deutschland-Geschichten</a>
-    <a href="https://art.youxingshijia.com" data-lang="zh">有行艺术</a>
-    <a href="https://art.youxingshijia.com" data-lang="en">Art Archive</a>
-    <a href="https://art.youxingshijia.com" data-lang="de">Kunstarchiv</a>
-    <a href="https://hero.youxingshijia.com" data-lang="zh">有幹英烈</a>
-    <a href="https://hero.youxingshijia.com" data-lang="en">Martyr Memorial</a>
-    <a href="https://hero.youxingshijia.com" data-lang="de">Gedenkstätte</a>
+  <div class="ft-brand">有行<span>世家</span> · YouXing Heritage</div>
+  <div class="ft-links">
+    <a href="libaimin.html">李白民专页</a>
+    <a href="https://art.youxingshijia.com">有行艺术</a>
+    <a href="https://hero.youxingshijia.com">有幹英烈</a>
+    <a href="https://books.youxingshijia.com">守中著作</a>
+    <a href="https://story.youxingshijia.com">旅德故事</a>
+    <a href="https://blog.youxingshijia.com">出海博客</a>
+    <a href="mailto:support@youxingshijia.com">联系我们</a>
   </div>
-  <p class="footer-copy">© 2024 有行世家 YouXing Heritage · youxingshijia.com · 族世传承数字珍版</p>
+  <p class="ft-copy">© 2024 有行世家 YouXing Heritage · youxingshijia.com · 族世传承数字珍版 · 联系邮箱：<a href="mailto:support@youxingshijia.com">support@youxingshijia.com</a></p>
 </footer>
 
+<!-- ══════════════════════════════════
+     SCRIPTS
+══════════════════════════════════ -->
 <script>
-function setLang(lang) {
-  document.documentElement.lang = lang === 'zh' ? 'zh-CN' : lang;
-  ['zh','en','de'].forEach(l => {
-    document.querySelectorAll(`[data-lang="${l}"]`).forEach(el => {
-      el.classList.toggle('active', l === lang);
+  /* 滚动进场动画 */
+  const revEls = document.querySelectorAll('.rev');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('on'), i * 60);
+        io.unobserve(e.target);
+      }
     });
-    document.querySelectorAll(`[data-lang-inline="${l}"]`).forEach(el => {
-      el.classList.toggle('active', l === lang);
+  }, { threshold: 0.08 });
+  revEls.forEach(el => io.observe(el));
+
+  /* 移动端菜单开关 */
+  const navToggle = document.getElementById('navToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+  navToggle.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    navToggle.classList.toggle('open', isOpen);
+    navToggle.setAttribute('aria-expanded', isOpen);
+  });
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      navToggle.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
     });
-    document.getElementById(`btn-${l}`).classList.toggle('active', l === lang);
   });
-  localStorage.setItem('yx-lang', lang);
-}
-
-// init
-const saved = localStorage.getItem('yx-lang') || 'zh';
-setLang(saved);
-
-// scroll reveal
-const reveals = document.querySelectorAll('.reveal');
-const io = new IntersectionObserver((entries) => {
-  entries.forEach((e, i) => {
-    if (e.isIntersecting) {
-      setTimeout(() => e.target.classList.add('visible'), i * 70);
-      io.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.08 });
-reveals.forEach(el => io.observe(el));
 </script>
+
 </body>
 </html>
