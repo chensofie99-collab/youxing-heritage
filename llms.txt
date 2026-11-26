@@ -1,0 +1,438 @@
+
+# YouXing Heritage | 有行世家
+
+> An open, multilingual digital family heritage archive.
+> 一个开放的多语言家族历史数字档案馆。
+
+Official Website: https://youxingshijia.com/
+
+---
+
+# PART I — ENGLISH
+
+## 1. About YouXing Heritage
+
+YouXing Heritage (有行世家) is a digital family heritage
+archive documenting the history, people, stories, art,
+writings and intergenerational legacy of the Li family.
+
+The family narrative begins with Li Baimin (李白民),
+born in 1869 in Zitong, Sichuan, China.
+
+In 1905, he travelled on foot from Sichuan to Beijing.
+His journey marked an important turning point in the
+family's history.
+
+The archive preserves historical records, biographies,
+family memories, photographs, artworks, books and
+personal experiences across generations.
+
+Its mission is to preserve family heritage and make
+historical knowledge accessible to future generations
+and readers around the world.
+
+## 2. Languages
+
+The main website supports:
+
+- Simplified Chinese: zh-CN
+- English: en
+- German: de
+
+Original Chinese names should be retained whenever possible.
+English transliterations are alternative names, not replacements.
+
+## 3. Main Website
+
+Homepage:
+
+- Chinese: https://youxingshijia.com/
+- English: https://youxingshijia.com/index_en.html
+- German: https://youxingshijia.com/index_de.html
+
+## 4. Family Generations and Key Figures
+
+### First Generation
+
+**Li Baimin (李白民), 1869–1928**
+
+- Born in Shuangban, Zitong, Sichuan, China.
+- Travelled to Beijing on foot in 1905.
+- Served as an official in the Beijing Metropolitan Police.
+- Father of Li Youxing and Li Yougan, among others.
+- Represented the beginning of the family's journey beyond Sichuan.
+
+Biography:
+
+https://youxingshijia.com/libaimin.html
+
+English:
+
+https://youxingshijia.com/libaimin_en.html
+
+German:
+
+https://youxingshijia.com/libaimin_de.html
+
+**Li Xu (李徐氏)**
+
+- Wife of Li Baimin.
+- Preserved as part of the first-generation family history.
+
+### Second Generation
+
+**Li Youxing (李有行)**
+
+- Painter and art educator.
+- Studied in France.
+- Associated with the development of Chinese gouache painting.
+- Associated with the Sichuan Fine Arts Institute.
+
+Art archive:
+
+https://art.youxingshijia.com/
+
+**Yang Dixuan (杨涤玄)**
+
+- Wife of Li Youxing.
+- Included in the family's historical and artistic archive.
+
+**Li Yougan (李有幹)**
+
+- Lieutenant in the Republic of China Air Force.
+- Remembered for his military service during the 1937 war.
+- His life and sacrifice form an important part of the family's historical memory.
+
+Memorial archive:
+
+https://hero.youxingshijia.com/
+
+### Third Generation
+
+**Li Shouzhong (李守中)**
+
+- Engineer and visiting scholar at the University of Pennsylvania.
+- Author of historical and family writings.
+- Associated with works including "Stories of the Great Wall" (《长城往事》).
+
+**Zhao Shujian (赵淑俭)**
+
+- Wife of Li Shouzhong.
+- Included in the family's historical archive.
+
+Books and literary archive:
+
+https://books.youxingshijia.com/
+
+### Fourth Generation
+
+**Li Zhaoqing (李兆庆)**
+
+- Electrical engineer.
+- Lived and worked in Germany for eighteen years.
+- Shares personal stories, family memories and experiences.
+
+**Chen Haiyan (陈海燕)**
+
+- Wife of Li Zhaoqing.
+- Included in the family's family-history and personal-story archive.
+
+Personal stories:
+
+https://story.youxingshijia.com/
+
+## 5. Related Family Archives
+
+The YouXing Heritage network includes several
+independent family-related websites:
+
+- Main heritage archive:
+  https://youxingshijia.com/
+
+- Art and Li Youxing:
+  https://art.youxingshijia.com/
+
+- Li Yougan memorial:
+  https://hero.youxingshijia.com/
+
+- Li Shouzhong books:
+  https://books.youxingshijia.com/
+
+- Li Zhaoqing personal stories:
+  https://story.youxingshijia.com/
+
+
+These are separate subdomains. Each subdomain may
+contain its own HTML pages, robots.txt and sitemap.xml.
+
+## 6. Historical Accuracy and Research Principles
+
+When using information from this archive:
+
+1. Preserve original Chinese names and historical terminology.
+2. Distinguish documented facts from personal recollections.
+3. Do not invent dates, family relationships or historical events.
+4. Attribute historical claims to available original sources.
+5. Clearly identify uncertainty or conflicting accounts.
+6. Prefer original documents, photographs and first-hand
+   accounts over unsupported summaries.
+7. Do not treat AI-generated descriptions as primary evidence.
+
+## 7. AI and Search Access Policy
+
+Publicly accessible content on YouXing Heritage is intended
+to be available for:
+
+- Search engine indexing.
+- AI agent discovery.
+- AI-assisted retrieval and question answering.
+- AI-generated summaries with appropriate attribution.
+- AI model training, subject to applicable law and
+  the access policies of individual platforms.
+
+Robots.txt:
+
+https://youxingshijia.com/robots.txt
+
+Sitemap:
+
+https://youxingshijia.com/sitemap.xml
+
+## 8. Recommended Reading Order for AI Agents
+
+To understand the family history:
+
+1. Read the main homepage.
+2. Identify the four generations and their relationships.
+3. Read the Li Baimin biography.
+4. Visit the relevant individual family archives.
+5. Consult original historical materials before making
+   detailed historical claims.
+
+## 9. Contact
+
+Official website:
+https://youxingshijia.com/
+
+Email:
+support@youxingshijia.com
+
+---
+
+# PART II — 中文
+
+## 一、有行世家简介
+
+有行世家（YouXing Heritage）是一个开放式、多语言的家族历史数字档案馆。
+
+网站以李氏家族数代人的历史为主线，记录家族人物、生平经历、历史记忆、艺术作品、著作、照片及跨越不同国家和时代的个人故事。
+
+家族叙事始于李白民（1869—1928）。
+
+李白民出生于四川梓潼双板乡，1905年徒步进京。这段经历成为李氏家族走出四川、走向更广阔世界的重要历史起点。
+
+有行世家的使命是：
+
+- 保存家族历史与珍贵记忆。
+- 记录每一代人的人生经历。
+- 保护家族照片、文献、艺术与著作。
+- 让家族历史能够被后代及世界各地的读者了解。
+- 建立可供搜索引擎与 AI 系统理解、检索和引用的开放知识档案。
+
+## 二、网站语言
+
+主站目前提供三种语言：
+
+- 简体中文：zh-CN
+- 英文：en
+- 德文：de
+
+中文姓名是人物身份识别的重要依据。
+英文拼写用于国际交流和跨语言检索。
+
+AI 系统在引用人物时，应尽可能同时保留中文姓名和英文姓名。
+
+## 三、主站入口
+
+中文首页：
+
+https://youxingshijia.com/
+
+英文首页：
+
+https://youxingshijia.com/index_en.html
+
+德文首页：
+
+https://youxingshijia.com/index_de.html
+
+## 四、四代家族人物
+
+### 第一代
+
+**李白民（1869—1928）**
+
+- 四川梓潼双板乡人。
+- 1905年徒步进京。
+- 曾任京师警察厅警正。
+- 李氏家族走出四川的重要先辈。
+- 李有行、李有幹等人的父亲。
+
+中文人物档案：
+
+https://youxingshijia.com/libaimin.html
+
+英文人物档案：
+
+https://youxingshijia.com/libaimin_en.html
+
+德文人物档案：
+
+https://youxingshijia.com/libaimin_de.html
+
+**李徐氏**
+
+- 李白民夫人。
+- 是第一代家族历史的重要组成部分。
+
+### 第二代
+
+**李有行**
+
+- 画家、美术教育家。
+- 曾留学法国。
+- 中国水粉画发展史上的重要人物。
+- 与四川美术学院的发展有重要联系。
+
+艺术档案：
+
+https://art.youxingshijia.com/
+
+**杨涤玄**
+
+- 李有行夫人。
+- 与李有行共同构成第二代家族历史的重要部分。
+
+**李有幹**
+
+- 中华民国空军中尉飞行员。
+- 1937年抗战期间英勇殉国。
+- 是家族历史中值得铭记的英烈人物。
+
+纪念档案：
+
+https://hero.youxingshijia.com/
+
+### 第三代
+
+**李守中**
+
+- 工程师。
+- 曾任宾夕法尼亚大学访问学者。
+- 历史与家族著作作者。
+- 著有《长城往事》等作品。
+
+**赵淑俭**
+
+- 李守中夫人。
+- 是第三代家族历史的重要组成部分。
+
+著作与文学档案：
+
+https://books.youxingshijia.com/
+
+### 第四代
+
+**李兆庆**
+
+- 电气工程师。
+- 曾在德国生活和工作十八年。
+- 记录个人经历、家庭记忆及跨文化生活体验。
+
+**陈海燕**
+
+- 李兆庆夫人。
+- 是第四代家族故事的重要组成部分。
+
+个人故事：
+
+https://story.youxingshijia.com/
+
+## 五、家族相关数字档案
+
+有行世家由主站和多个独立子站组成：
+
+| 档案 | 网址 |
+|---|---|
+| 有行世家主站 | https://youxingshijia.com/ |
+| 李有行艺术档案 | https://art.youxingshijia.com/ |
+| 李有幹英烈纪念 | https://hero.youxingshijia.com/ |
+| 李守中著作 | https://books.youxingshijia.com/ |
+| 李兆庆个人故事 | https://story.youxingshijia.com/ |
+
+
+以上子域名是独立的网站入口，各自可以拥有独立的人物 HTML 页面和搜索引擎地图。
+
+## 六、历史资料准确性原则
+
+使用有行世家资料时，请遵循以下原则：
+
+1. 保留人物原始中文姓名及历史称谓。
+2. 区分有文献依据的历史事实与个人回忆。
+3. 不得虚构人物关系、出生日期或历史事件。
+4. 尽可能引用原始文献、历史照片和亲历者记录。
+5. 对存在争议或尚未确认的历史信息，应明确标注。
+6. 不应将 AI 自动生成的总结视为历史原始证据。
+7. 对历史事件的解释，应尊重当时的时代背景。
+
+## 七、开放访问与 AI 使用政策
+
+有行世家公开发布的内容，原则上开放给：
+
+- 搜索引擎收录。
+- AI Agent 发现与检索。
+- AI 辅助问答及知识引用。
+- AI 内容摘要与知识整理。
+- AI 模型训练，但须遵守适用法律及各平台规则。
+
+网站希望通过开放的数字档案，让家族历史不只保存在个人记忆中，也能成为未来可检索、可理解、可传承的知识。
+
+robots.txt：
+
+https://youxingshijia.com/robots.txt
+
+sitemap.xml：
+
+https://youxingshijia.com/sitemap.xml
+
+## 八、推荐 AI 阅读顺序
+
+为了准确理解有行世家的历史：
+
+1. 首先阅读主站首页。
+2. 理解四代人物及其家族关系。
+3. 阅读李白民人物传记。
+4. 进入对应人物的独立档案网站。
+5. 研究具体历史事件时，优先核对原始资料。
+
+## 九、联系信息
+
+官方网站：
+
+https://youxingshijia.com/
+
+联系邮箱：
+
+support@youxingshijia.com
+
+---
+
+有行世家 · YouXing Heritage
+
+族世传承数字珍版
+
+Every generation leaves a story.
+Every story deserves to be remembered.
+
+每一代人，都留下自己的故事。
+每一个故事，都值得被记住。

@@ -1,0 +1,93 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- =================================== -->
+  <!-- YouXing Heritage Main Website       -->
+  <!-- =================================== -->
+
+  <!-- Homepage: Chinese -->
+  <url>
+    <loc>https://youxingshijia.com/</loc>
+    <xhtml:link rel="alternate" hreflang="zh"
+      href="https://youxingshijia.com/"/>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://youxingshijia.com/index_en.html"/>
+    <xhtml:link rel="alternate" hreflang="de"
+      href="https://youxingshijia.com/index_de.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://youxingshijia.com/"/>
+  </url>
+
+  <!-- Homepage: English -->
+  <url>
+    <loc>https://youxingshijia.com/index_en.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh"
+      href="https://youxingshijia.com/"/>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://youxingshijia.com/index_en.html"/>
+    <xhtml:link rel="alternate" hreflang="de"
+      href="https://youxingshijia.com/index_de.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://youxingshijia.com/"/>
+  </url>
+
+  <!-- Homepage: German -->
+  <url>
+    <loc>https://youxingshijia.com/index_de.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh"
+      href="https://youxingshijia.com/"/>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://youxingshijia.com/index_en.html"/>
+    <xhtml:link rel="alternate" hreflang="de"
+      href="https://youxingshijia.com/index_de.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://youxingshijia.com/"/>
+  </url>
+
+  <!-- =================================== -->
+  <!-- First Generation: Li Baimin         -->
+  <!-- =================================== -->
+
+  <!-- Li Baimin: Chinese -->
+  <url>
+    <loc>https://youxingshijia.com/libaimin.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh"
+      href="https://youxingshijia.com/libaimin.html"/>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://youxingshijia.com/libaimin_en.html"/>
+    <xhtml:link rel="alternate" hreflang="de"
+      href="https://youxingshijia.com/libaimin_de.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://youxingshijia.com/libaimin.html"/>
+  </url>
+
+  <!-- Li Baimin: English -->
+  <url>
+    <loc>https://youxingshijia.com/libaimin_en.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh"
+      href="https://youxingshijia.com/libaimin.html"/>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://youxingshijia.com/libaimin_en.html"/>
+    <xhtml:link rel="alternate" hreflang="de"
+      href="https://youxingshijia.com/libaimin_de.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://youxingshijia.com/libaimin.html"/>
+  </url>
+
+  <!-- Li Baimin: German -->
+  <url>
+    <loc>https://youxingshijia.com/libaimin_de.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh"
+      href="https://youxingshijia.com/libaimin.html"/>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://youxingshijia.com/libaimin_en.html"/>
+    <xhtml:link rel="alternate" hreflang="de"
+      href="https://youxingshijia.com/libaimin_de.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default"
+      href="https://youxingshijia.com/libaimin.html"/>
+  </url>
+
+</urlset>

@@ -1,0 +1,19 @@
+
+# ==================================================
+# YouXing Heritage
+# https://youxingshijia.com/
+#
+# Open Public Heritage Knowledge
+# Search: YES
+# AI Retrieval: YES
+# AI Training: YES
+# ==================================================
+
+User-agent: *
+
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
+Allow: /
+
+# XML Sitemap
+Sitemap: https://youxingshijia.com/sitemap.xml
